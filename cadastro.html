@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>IOT e Video Games - Cadastro</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="cadastro.css">
+    </head>
+    <body>
+    	<header id="menu">
+            <nav>
+                <img src="img/iotimgmenu.png" alt="IOT" id="imgmenu" onclick="mudarCor()">
+                <div id="divApresentacao" class="divLinks">
+                    <a class="links" href="index.html">IOT</a>
+                </div>
+                <div class="divLinks">
+                    <a class="links" href="index.html">Video Games</a>
+                </div>
+                <div class="divLinks">
+                    <a class="links" href="index.html">Interação</a>
+                </div>
+                <div class="divLinks">
+                    <a class="links" href="index.html">Crescimento</a>
+                </div>
+                <div class="divLinks">
+                    <a class="links" href="index.html">Futuro</a>
+                </div>
+                <div class="divLinks">
+                    <a class="links" href="index.html">Dados</a>
+                </div>
+                <div class="divLinks">
+                    <a class="links" href="cadastro.html">Cadastro</a>
+                </div>
+                <div class="divLinks" id="divGaleria">
+                    <a class="links" href="galeria.html">Galeria</a>
+                </div>
+            </nav>
+        </header>
+        <h1 id="h1cadastro">Cadastro</h1>
+        <div id="divTabelaCadastro">
+            <table id="tabelaCadastro">
+                <tr>
+                    <td>
+                        <label for="usuario" id="labelUsuario">Usuário</label>
+                    </td>
+                    <td>
+                        <input type="text" id="usuario" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tdLabelSenha">
+                        <label for="senha" id="labelSenha">Senha</label>
+                    </td>
+                    <td>
+                        <input type="password" id="senha" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tdBotaoLogar">
+                        <button type="submit" id="botaoLogar" class="botao" onclick="login()">Logar</button>
+                    </td>
+                    <td>
+                        <button type="submit" id="botaoCadastrar" class="botao" onclick="cadastrar()">Cadastrar</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script type="text/javascript" src="cadastroJS.js"></script>
+    </body>
+</html>
